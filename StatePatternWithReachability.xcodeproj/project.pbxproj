@@ -13,6 +13,18 @@
 		1FB53CB41EF3A725001D1A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB53CB31EF3A725001D1A6A /* Assets.xcassets */; };
 		1FB53CB71EF3A725001D1A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB53CB51EF3A725001D1A6A /* LaunchScreen.storyboard */; };
 		1FB53CC21EF3A726001D1A6A /* StatePatternWithReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CC11EF3A726001D1A6A /* StatePatternWithReachabilityTests.swift */; };
+		1FB53CCF1EF3A961001D1A6A /* ReachabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CCE1EF3A961001D1A6A /* ReachabilityState.swift */; };
+		1FB53CD01EF3A961001D1A6A /* ReachabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CCE1EF3A961001D1A6A /* ReachabilityState.swift */; };
+		1FB53CD21EF3A9E8001D1A6A /* AMReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD11EF3A9E7001D1A6A /* AMReachability.swift */; };
+		1FB53CD31EF3A9E8001D1A6A /* AMReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD11EF3A9E7001D1A6A /* AMReachability.swift */; };
+		1FB53CD51EF3B31F001D1A6A /* ReachabilityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD41EF3B31F001D1A6A /* ReachabilityObserver.swift */; };
+		1FB53CD61EF3B31F001D1A6A /* ReachabilityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD41EF3B31F001D1A6A /* ReachabilityObserver.swift */; };
+		1FB53CD81EF3B63F001D1A6A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD71EF3B63F001D1A6A /* APIClient.swift */; };
+		1FB53CD91EF3B63F001D1A6A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CD71EF3B63F001D1A6A /* APIClient.swift */; };
+		1FB53CDB1EF3D181001D1A6A /* APIFetcherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CDA1EF3D181001D1A6A /* APIFetcherState.swift */; };
+		1FB53CDC1EF3D181001D1A6A /* APIFetcherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CDA1EF3D181001D1A6A /* APIFetcherState.swift */; };
+		1FB53CDF1EF3D70C001D1A6A /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CDE1EF3D70C001D1A6A /* APIFetcher.swift */; };
+		1FB53CE01EF3D70C001D1A6A /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB53CDE1EF3D70C001D1A6A /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,12 @@
 		1FB53CBD1EF3A726001D1A6A /* StatePatternWithReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatePatternWithReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB53CC11EF3A726001D1A6A /* StatePatternWithReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePatternWithReachabilityTests.swift; sourceTree = "<group>"; };
 		1FB53CC31EF3A726001D1A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB53CCE1EF3A961001D1A6A /* ReachabilityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityState.swift; sourceTree = "<group>"; };
+		1FB53CD11EF3A9E7001D1A6A /* AMReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMReachability.swift; sourceTree = "<group>"; };
+		1FB53CD41EF3B31F001D1A6A /* ReachabilityObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityObserver.swift; sourceTree = "<group>"; };
+		1FB53CD71EF3B63F001D1A6A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1FB53CDA1EF3D181001D1A6A /* APIFetcherState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetcherState.swift; sourceTree = "<group>"; };
+		1FB53CDE1EF3D70C001D1A6A /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2FF29E1EF8C877009DCD6E /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				1FB53CDD1EF3D661001D1A6A /* Reachability */,
+				1FB53CD71EF3B63F001D1A6A /* APIClient.swift */,
+				1FB53CDE1EF3D70C001D1A6A /* APIFetcher.swift */,
+				1FB53CDA1EF3D181001D1A6A /* APIFetcherState.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
 		1FB53CA01EF3A725001D1A6A = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +106,8 @@
 		1FB53CAB1EF3A725001D1A6A /* StatePatternWithReachability */ = {
 			isa = PBXGroup;
 			children = (
-				1FB53CAC1EF3A725001D1A6A /* AppDelegate.swift */,
-				1FB53CAE1EF3A725001D1A6A /* ViewController.swift */,
+				1FB53CCD1EF3A8DB001D1A6A /* Models */,
+				1FB53CCC1EF3A745001D1A6A /* Controller */,
 				1FB53CB01EF3A725001D1A6A /* Main.storyboard */,
 				1FB53CB31EF3A725001D1A6A /* Assets.xcassets */,
 				1FB53CB51EF3A725001D1A6A /* LaunchScreen.storyboard */,
@@ -94,6 +123,34 @@
 				1FB53CC31EF3A726001D1A6A /* Info.plist */,
 			);
 			path = StatePatternWithReachabilityTests;
+			sourceTree = "<group>";
+		};
+		1FB53CCC1EF3A745001D1A6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FB53CAC1EF3A725001D1A6A /* AppDelegate.swift */,
+				1FB53CAE1EF3A725001D1A6A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1FB53CCD1EF3A8DB001D1A6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F2FF29E1EF8C877009DCD6E /* Connection */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1FB53CDD1EF3D661001D1A6A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1FB53CD11EF3A9E7001D1A6A /* AMReachability.swift */,
+				1FB53CD41EF3B31F001D1A6A /* ReachabilityObserver.swift */,
+				1FB53CCE1EF3A961001D1A6A /* ReachabilityState.swift */,
+			);
+			name = Reachability;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,17 +198,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = stv;
 				TargetAttributes = {
 					1FB53CA81EF3A725001D1A6A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PCCZJUYRT6;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					1FB53CBC1EF3A726001D1A6A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PCCZJUYRT6;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1FB53CA81EF3A725001D1A6A;
 					};
@@ -201,8 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB53CDB1EF3D181001D1A6A /* APIFetcherState.swift in Sources */,
+				1FB53CDF1EF3D70C001D1A6A /* APIFetcher.swift in Sources */,
 				1FB53CAF1EF3A725001D1A6A /* ViewController.swift in Sources */,
 				1FB53CAD1EF3A725001D1A6A /* AppDelegate.swift in Sources */,
+				1FB53CD21EF3A9E8001D1A6A /* AMReachability.swift in Sources */,
+				1FB53CD51EF3B31F001D1A6A /* ReachabilityObserver.swift in Sources */,
+				1FB53CCF1EF3A961001D1A6A /* ReachabilityState.swift in Sources */,
+				1FB53CD81EF3B63F001D1A6A /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB53CE01EF3D70C001D1A6A /* APIFetcher.swift in Sources */,
+				1FB53CD31EF3A9E8001D1A6A /* AMReachability.swift in Sources */,
+				1FB53CDC1EF3D181001D1A6A /* APIFetcherState.swift in Sources */,
 				1FB53CC21EF3A726001D1A6A /* StatePatternWithReachabilityTests.swift in Sources */,
+				1FB53CD61EF3B31F001D1A6A /* ReachabilityObserver.swift in Sources */,
+				1FB53CD91EF3B63F001D1A6A /* APIClient.swift in Sources */,
+				1FB53CD01EF3A961001D1A6A /* ReachabilityState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +325,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -262,7 +335,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -304,7 +381,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -312,7 +391,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -346,7 +429,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stv.StatePatternWithReachability;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -359,7 +443,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stv.StatePatternWithReachability;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -373,7 +458,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stv.StatePatternWithReachabilityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatePatternWithReachability.app/StatePatternWithReachability";
 			};
 			name = Debug;
@@ -388,7 +474,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stv.StatePatternWithReachabilityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatePatternWithReachability.app/StatePatternWithReachability";
 			};
 			name = Release;
@@ -412,6 +499,7 @@
 				1FB53CC81EF3A726001D1A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB53CC91EF3A726001D1A6A /* Build configuration list for PBXNativeTarget "StatePatternWithReachabilityTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +508,7 @@
 				1FB53CCB1EF3A726001D1A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
