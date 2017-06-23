@@ -1,3 +1,6 @@
+# StatePatternWithReachability
+StatePatternとReachabilityを組み合わせたサンプルです。
+
 
 ## ReachabilityObserver
 参照を保持しておくことを想定。初期化した際、接続可能性が変化した際に`NotificationCenter`経由で通知する。
@@ -11,3 +14,6 @@ extension Notification.Name{
 }
 ```
 
+## 参考
+- Reachability公式
+- Stateパターン（木下さんの記事）
